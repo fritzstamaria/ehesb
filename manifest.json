@@ -1,1 +1,25 @@
-{"name":"PROJECT eHES-B Digital Hub","short_name":"eHES-B","start_url":"./index.html","display":"standalone","theme_color":"#0b5d3b","background_color":"#f7faf8","description":"Hinigaran Elementary School-B Digital Hub"}
+{
+  "name": "PROJECT eHES-B Digital Hub",
+  "short_name": "eHES-B",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0b5d3b",
+  "background_color": "#f7faf8",
+  "description": "Hinigaran Elementary School-B Digital Hub",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
