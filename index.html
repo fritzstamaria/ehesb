@@ -1,15 +1,49 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b5d3b"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"><title>PROJECT eHES-B</title></head><body>
-<header><div class="brand"><div class="logo">HES-B</div><div><b>HINIGARAN ELEMENTARY SCHOOL-B</b><small>PROJECT eHES-B • DIGITAL HUB</small></div></div><button id="menuBtn">☰</button></header>
-<nav id="nav"><button data-page="home">🏠 Home</button><button data-page="school">🏫 School Info</button><button data-page="news">📢 Announcements</button><button data-page="learn">📚 Learning</button><button data-page="projects">🎯 Programs & Projects</button><button data-page="events">📅 Events</button><button data-page="knights">🏆 HES-B Knights</button><button data-page="gallery">📸 Gallery</button><button data-page="forms">📄 Forms</button><button data-page="contact">☎ Contact</button><a target="_blank" href="https://sites.google.com/deped.gov.ph/hinigaranelementaryschool-b/home">🌐 Official Website</a></nav>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b5d3b">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="eHES-B">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="stylesheet" href="style.css"><title>PROJECT eHES-B</title>
+</head>
+<body>
+<header><div class="brand"><div class="logo"><img src="hesb-logo.jpg" alt="HES-B"></div><div><b>HINIGARAN ELEMENTARY SCHOOL-B</b><small>PROJECT eHES-B • DIGITAL HUB</small></div></div><button id="menuBtn">☰</button></header>
+<nav id="nav">
+<button data-page="home">🏠 Home</button><button data-page="school">🏫 School Info</button><button data-page="news">📢 Announcements</button>
+<button data-page="learn">📚 Learning</button><button data-page="projects">🎯 Programs & Projects</button><button data-page="events">📅 Events</button>
+<button data-page="knights">🏆 HES-B Knights</button><button data-page="gallery">📸 Gallery</button><button data-page="forms">📄 Forms</button><button data-page="contact">☎ Contact</button>
+<button class="admin-link" onclick="openAdmin()">🔐 Admin Dashboard</button>
+<a target="_blank" href="https://sites.google.com/deped.gov.ph/hinigaranelementaryschool-b/home">🌐 Official Website</a>
+</nav>
 <main>
-<section id="home" class="page active"><div class="hero"><span>OFFICIAL DIGITAL GATEWAY</span><h1>PROJECT eHES-B</h1><p>One mobile hub for HES-B school information, learning resources, announcements, programs and achievements.</p><button class="light" data-page="news">Latest Updates</button><button class="outline" id="site1">Official Website</button></div><h2>Quick Access</h2><div class="tiles"><button data-page="school">🏫<b>School Info</b><small>Profile & values</small></button><button data-page="learn">📚<b>Learning</b><small>Resources</small></button><button data-page="news">📢<b>Updates</b><small>Announcements</small></button><button data-page="forms">📄<b>Forms</b><small>Downloads</small></button><button data-page="events">📅<b>Events</b><small>Activities</small></button><button data-page="knights">🏆<b>Knights</b><small>Achievements</small></button></div><div class="card"><b>📱 QR-Enabled Digital Gateway</b><p>Scan the PROJECT eHES-B QR code to access the school's digital services.</p></div></section>
+<section id="home" class="page active"><div class="hero"><span>OFFICIAL DIGITAL GATEWAY</span><h1>PROJECT eHES-B</h1><p>One mobile hub for HES-B school information, learning resources, announcements, programs and achievements.</p><button class="light" data-page="news">Latest Updates</button><button class="outline" onclick="openSite()">Official Website</button></div><h2>Quick Access</h2><div class="tiles">
+<button data-page="school">🏫<b>School Info</b><small>Profile & values</small></button><button data-page="learn">📚<b>Learning</b><small>Resources</small></button>
+<button data-page="news">📢<b>Updates</b><small>Announcements</small></button><button data-page="forms">📄<b>Forms</b><small>Downloads</small></button>
+<button data-page="events">📅<b>Events</b><small>Activities</small></button><button data-page="knights">🏆<b>Knights</b><small>Achievements</small></button></div>
+<div class="card"><b>📱 QR-Enabled Digital Gateway</b><p>Scan the PROJECT eHES-B QR code to access the school's digital services.</p></div></section>
+
 <section id="school" class="page"><h2>🏫 School Information</h2><article><h3>Hinigaran Elementary School-B</h3><p>Public elementary school under Hinigaran I, Schools Division of Negros Occidental.</p><div class="row"><b>School ID</b><span>117114</span></div><div class="row"><b>District</b><span>Hinigaran I</span></div></article><article><h3>Vision</h3><p>We dream of Filipinos who passionately love their country and whose values and competencies enable them to realize their full potential and contribute meaningfully to building the nation.</p></article><article><h3>Mission</h3><p>To protect and promote the right of every Filipino to quality, equitable, culture-based and complete basic education in a child-friendly, gender-sensitive, safe and motivating environment.</p></article><article><h3>Core Values</h3><div class="tags"><span>Maka-Diyos</span><span>Makatao</span><span>Makakalikasan</span><span>Makabansa</span></div></article></section>
-<section id="news" class="page"><h2>📢 Announcements</h2><article><label>SCHOOL UPDATE</label><h3>Welcome to PROJECT eHES-B</h3><p>This is the mobile dashboard for Hinigaran Elementary School-B. Official announcements can be added in the production admin system.</p></article><article><label>IMPORTANT</label><h3>School Activities & Notices</h3><p>Use this area for registration reminders, schedules and official notices.</p></article></section>
-<section id="learn" class="page"><h2>📚 Learning Resources</h2><div class="cards"><article>📖<h3>Reading</h3><p>Reading materials and intervention resources.</p></article><article>🔢<h3>Mathematics</h3><p>Worksheets and practice activities.</p></article><article>🔬<h3>Science</h3><p>Learning activities and resources.</p></article><article>💻<h3>ICT</h3><p>Digital literacy resources.</p></article></div><article><button id="site2">Open Digital Hub Resources</button></article></section>
-<section id="projects" class="page"><h2>🎯 Programs & Projects</h2><div class="cards"><article><h3>PROJECT FLAMES</h3><p>School-based learner development initiative.</p></article><article><h3>PROJECT KANTAHA</h3><p>School program supporting participation and engagement.</p></article><article><h3>PROJECT REPORT</h3><p>Reading Enhancement Promotes Orderly Responsive Teaching.</p></article><article><h3>WASH in Schools</h3><p>Health, sanitation and hygiene initiatives.</p></article><article><h3>PROJECT eHES-B</h3><p>QR-enabled school digital gateway.</p></article></div></section>
-<section id="events" class="page"><h2>📅 Events & Activities</h2><div class="cards"><article>🏫<h3>School Activities</h3><p>Upcoming programs and celebrations.</p></article><article>🏅<h3>Sports</h3><p>District and municipal sports activities.</p></article><article>👩‍🏫<h3>Professional Development</h3><p>INSET, LAC and school-based activities.</p></article></div></section>
-<section id="knights" class="page"><div class="hero mini"><span>HES-B KNIGHTS</span><h1>🏆 Sports & Achievements</h1><p>Celebrate athletes, coaches and school achievements.</p></div><article><h3>Achievement Center</h3><p>Add official results, medals, athlete profiles and congratulations posts here.</p></article></section>
-<section id="gallery" class="page"><h2>📸 Gallery</h2><div class="gallery"><div>HES-B<br><small>Activities</small></div><div>HES-B<br><small>Learning</small></div><div>HES-B<br><small>Sports</small></div><div>HES-B<br><small>Programs</small></div></div></section>
-<section id="forms" class="page"><h2>📄 Forms & Downloads</h2><article><h3>Digital Forms Center</h3><p>Official school forms, requests and downloadable documents can be placed here.</p><button id="site3">Visit HES-B Website</button></article></section>
-<section id="contact" class="page"><h2>☎ Contact HES-B</h2><article><div class="row"><b>Email</b><span>117114@deped.gov.ph</span></div><div class="row"><b>Telephone</b><span>(034) 471-2687</span></div><div class="row"><b>District</b><span>Hinigaran I, Negros Occidental</span></div></article><button id="site4">🌐 Official Website</button></section>
-</main><footer>PROJECT eHES-B • Hinigaran Elementary School-B<br><small>Digital Access • Learning • Information • Achievement</small></footer><script src="app.js"></script></body></html>
+
+<section id="news" class="page"><h2>📢 Announcements</h2><div id="newsList"></div></section>
+<section id="learn" class="page"><h2>📚 Learning Resources</h2><div id="learnList" class="cards"></div></section>
+<section id="projects" class="page"><h2>🎯 Programs & Projects</h2><div id="projectList" class="cards"></div></section>
+<section id="events" class="page"><h2>📅 Events & Activities</h2><div id="eventList" class="cards"></div></section>
+<section id="knights" class="page"><div class="hero mini"><span>HES-B KNIGHTS</span><h1>🏆 Sports & Achievements</h1><p>Celebrate athletes, coaches and school achievements.</p></div><div id="knightList"></div></section>
+<section id="gallery" class="page"><h2>📸 Gallery</h2><div id="galleryList" class="gallery"></div></section>
+<section id="forms" class="page"><h2>📄 Forms & Downloads</h2><div id="formList"></div></section>
+<section id="contact" class="page"><h2>☎ Contact HES-B</h2><article><div class="row"><b>Email</b><span>117114@deped.gov.ph</span></div><div class="row"><b>Telephone</b><span>(034) 471-2687</span></div><div class="row"><b>District</b><span>Hinigaran I, Negros Occidental</span></div></article><button onclick="openSite()">🌐 Official Website</button></section>
+
+<section id="admin" class="page admin-page">
+<div class="admin-head"><div><span>SECURE CONTENT MANAGER</span><h2>🔐 eHES-B Admin Dashboard</h2></div><button onclick="logout()">Log out</button></div>
+<div id="loginBox" class="login"><h3>Admin Login</h3><p>Prototype access: enter the administrator password.</p><input id="adminPass" type="password" placeholder="Password"><button onclick="login()">Sign in</button><small>For production deployment, replace this local login with secure Firebase/Google authentication.</small></div>
+<div id="dashboard" style="display:none">
+<div class="admin-tabs"><button onclick="adminTab('announcements')">📢 Announcements</button><button onclick="adminTab('events')">📅 Events</button><button onclick="adminTab('resources')">📚 Resources</button><button onclick="adminTab('projects')">🎯 Projects</button><button onclick="adminTab('forms')">📄 Forms</button><button onclick="adminTab('gallery')">📸 Gallery</button></div>
+<div id="editor"></div></div></section>
+</main><footer>PROJECT eHES-B • Hinigaran Elementary School-B<br><small>Digital Access • Learning • Information • Achievement</small></footer>
+<script src="./app.js"></script></body></html>
